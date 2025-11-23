@@ -21,3 +21,19 @@
   });
   ```
 - 이후 터미널에서 `npx json-server server/db.json` 명령어를 입력하여 서버 실행
+
+## tanstack-query
+
+### 리페칭
+
+- staleTime이 지나 stale한 상태가 된 데이터를 다시 불러오는 과정
+- Mount: 캐시 데이터를 사용하는 컴포넌트가 마운트 되었을 때
+- WindowFocus: 사용자가 이 탭에 다시 돌아왔을 때
+- Reconnect: 인터넷 연결이 끊어졌다가 다시 연결되었을 때
+- Interval: 특정 시간을 주기로
+- 위의 설정을 사용자가 임의로 설정할 수 있음
+
+### 개발에 도움을 주는 도구
+
+- react-query-devtools: 캐시를 시각적으로 볼 수 있도록 도움을 줌
+  - `npm i @tanstack/react-query-devtools` 명령어로 설치
