@@ -13,7 +13,7 @@ export default defineConfig({
   },
   server: {
     watch: {
-      ignored: ["**/sever/**", "**/note/**"],
+      ignored: ["**/server/**", "**/note/**"],
     },
   },
 });
