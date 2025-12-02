@@ -37,3 +37,8 @@
 
 - react-query-devtools: 캐시를 시각적으로 볼 수 있도록 도움을 줌
   - `npm i @tanstack/react-query-devtools` 명령어로 설치
+
+### 캐시 정규화
+
+- 데이터 평탄화 및 중복 제거를 하는 과정
+- 예를 들어 `["todo", "list"]`라는 쿼리 키를 가진 그룹과, `["todo", "detail", "id"]`라는 쿼리 키를 가진 그룹이 있을 때, 이를 평탄화하여 개별 아이템에 접근하기 쉽게 만듦
